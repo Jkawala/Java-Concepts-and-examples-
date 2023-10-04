@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="169.0" style="-fx-background-color: #ECE237;">
+         <children>
+            <Label layoutX="57.0" layoutY="30.0" text="Admin Page" />
+            <ImageView fitHeight="48.0" fitWidth="159.0" layoutX="28.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/JavaFX_Logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnBack" layoutX="64.0" layoutY="200.0" mnemonicParsing="false" onAction="#goToStaff" text="Back" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="170.0" prefHeight="400.0" prefWidth="449.0" style="-fx-background-color: aquamarine;">
+         <children>
+            <TableView fx:id="tableView" layoutX="9.0" layoutY="22.0" prefHeight="374.0" prefWidth="424.0">
+              <columns>
+                <TableColumn fx:id="userNameColumn" prefWidth="129.0" text="UserName" />
+                <TableColumn fx:id="userRoleColumn" prefWidth="59.0" text="Role" />
+                  <TableColumn fx:id="userPasswordColumn" prefWidth="103.0" text="Password" />
+                  <TableColumn fx:id="userPayrateColumn" prefWidth="103.0" text="PayRate" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
